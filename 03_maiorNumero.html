@@ -1,17 +1,23 @@
-<meta charset="UTF-8">
-<script>
-    /*
-    PROBLEMA: MAIOR NÚMERO
-    Faça um programa que peça ao usuário para informar cinco números.
-    No final, apresente o maior número informado pelo usuário.
-    */
+    <meta charset="UTF-8">
+    <script>
+        /*
+        PROBLEMA: MAIOR NÚMERO
+        Faça um programa que peça ao usuário para informar cinco números.
+        No final, apresente o maior número informado pelo usuário.
+        */
 
-    //ENTRADA
+        //ENTRADA
+        
+        let numeroM = []
+        
+        //PROCESSAMENTO
+        for(let i = 1 ; i <= 5 ; i++) {
+            let numero = Number(prompt(`informe 5 numeros`));
+            if(numero > numeroM) {
+                numeroM = numero
+            }
+        }
+        //SAÍDA
+    document.write(`a maior nota é de ${numeroM}`)
 
-    
-    //PROCESSAMENTO
-
-    
-    //SAÍDA
-
-</script>
+    </script>
